@@ -10,7 +10,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <link href="{{ asset('css/tailwind.min.css') }}" rel="stylesheet">
+        {{-- <link href="{{ asset('css/tailwind.min.css') }}" rel="stylesheet"> --}}
+        <script src="https://cdn.tailwindcss.com"></script>
 
         <style>
             body {
@@ -21,7 +22,28 @@
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                here
+                <x-badge primary xs>Primary xs</x-badge>
+                <x-badge secondary sm>Secondary sm</x-badge>
+                <x-badge secondary>Secondary base</x-badge>
+                <x-badge primary lg>Primary lg</x-badge>
+                <x-badge secondary xl>Secondary xl</x-badge>
+
+                <x-badge primary class="text-red-500">Primary text-red-500</x-badge>
+                <x-badge secondary class="rounded px-5">Secondary rounded p-x-5</x-badge>
+
+                {{--
+                    With default attributes (type=primary size=base)
+                    <x-badge>Primary base</x-badge>
+
+                    With named attributes
+                    <x-badge
+                        type="primary"
+                        size="sm"
+                        class="rounded px-5"
+                    >
+                        Primary sm rounded p-x-5
+                    </x-badge>
+                --}}
             </div>
         </div>
     </body>
