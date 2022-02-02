@@ -3,14 +3,14 @@ Properties
 - type (primary*, secondary): text-color-*, bg-color-*
 - size (xs, sm, base*, lg, xl): text-*, p-*,
 
-Any class should be easily replaced and multiple combinations should be allowed:
+Any css class should be easily replaced and multiple combinations should be allowed:
 - <component type="primary" class="bg-red-500">lorem</component>
-- <component size="xs" class="text-red-200 bg-gray-500">lorem</component>s
+- <component size="xs" class="text-red-200 bg-gray-500">lorem</component>
 --}}
 
 @props([
-    'type' => 'primary', // primary, secondary
-    'size' => 'base', // 'xs', 'sm', 'base', 'lg', 'xl',
+    'type' => 'primary',
+    'size' => 'base',
 ])
 
 @php

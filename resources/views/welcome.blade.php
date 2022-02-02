@@ -7,25 +7,24 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        {{-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"> --}}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        {{-- <link href="{{ asset('css/tailwind.min.css') }}" rel="stylesheet"> --}}
         <script src="https://cdn.tailwindcss.com"></script>
 
         <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-
-            .tw { color: white; }
-            .tp { color: violet; }
+            html { font-size: small; }
+            body { font-family: 'Nunito', sans-serif; }
         </style>
     </head>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-200 sm:items-center py-4 sm:pt-0">
             <div class="space-y-6 bg-gray-100 py-6 max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <x-jet-button class="text-purple-800">Test</x-jet-button>
+                <x-jet-button class="text-gray-200">jet button test</x-jet-button>
+
                 <div>
                     <h2 class="text-center">Badges</h2>
 
